@@ -30,7 +30,7 @@ export default function Home() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <h4 className="text-xl font-semibold mb-2">Advanced Tools</h4>
-              <p>AI design, AR previews, and more coming soon!</p>
+              <p>AI design, AR previews, and more coming soon! <a href="/sustainability" className="text-blue-600 hover:underline">Try our Sustainability Calculator</a></p>
             </div>
           </div>
         </div>

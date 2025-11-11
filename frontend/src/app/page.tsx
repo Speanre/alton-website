@@ -22,7 +22,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow">
               <h4 className="text-xl font-semibold mb-2">Printing</h4>
-              <p>Business cards, banners, flyers, and more with premium quality.</p>
+              <p>Business cards, banners, flyers, and more with premium quality. <a href="/ar" className="text-blue-600 hover:underline">Preview in AR</a></p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <h4 className="text-xl font-semibold mb-2">Branding</h4>

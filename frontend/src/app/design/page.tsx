@@ -1,7 +1,6 @@
 'use client'; // For interactivity
 
 import { useState } from 'react';
-import Image from 'next/image'; // Added import for Image component
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -56,19 +55,19 @@ export default function DesignAI() {
                   {suggestions.map((suggestion, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg shadow">
                       <p className="text-sm">{suggestion}</p>
-                      <Image
-                        src={`https://via.placeholder.com/300x200?text=Design+${index + 1}`}
+                      <img
+                        src={`https://picsum.photos/300/200?random=${index + 1}`} // Switched to picsum (no fetch errors)
                         alt={`Mock Design ${index + 1}`}
                         width={300}
                         height={200}
-                        className="mt-2 rounded"
+                        className="mt-2 rounded w-full"
                       />
                     </div>
                   ))}
                 </div>
               </div>
             )}
-            {/* Added collab link here, after suggestions */}
+            {/* Collab link */}
             <div className="text-center mt-6">
               <a href="/collab" className="text-blue-600 hover:underline">Collaborate on Designs in Real-Time</a>
             </div>

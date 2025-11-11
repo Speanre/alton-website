@@ -5,6 +5,8 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'via.placeholder.com',
+        port: '', // Empty for default HTTPS
+        pathname: '/**', // Allows any path/query (e.g., /300x200?text=Design+1)
       },
     ],
   },

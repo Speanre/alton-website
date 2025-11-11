@@ -1,16 +1,14 @@
-import Image from 'next/image';
-
 export default function Header() {
   return (
     <header className="bg-blue-600 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <Image
-            src="https://via.placeholder.com/50?text=Alton"
+          <img
+            src="https://picsum.photos/50/50?random=1" // Switched to picsum (reliable free placeholder)
             alt="Alton Logo"
             width={50}
             height={50}
-            className="mr-2"
+            className="mr-2 rounded"
           />
           <h1 className="text-2xl font-bold">Alton</h1>
         </div>
